@@ -1,9 +1,6 @@
 package com.packade;
 
-import com.packade.models.Endereco;
-import com.packade.models.Gerente;
-import com.packade.models.OperadorDeCaixa;
-import com.packade.models.Vendedor;
+import com.packade.models.*;
 
 import java.sql.SQLOutput;
 
@@ -54,5 +51,11 @@ public class Main {
 
         System.out.println("-----------------------------------------------------------------------------------------");
 
+        Barbeiros barbeiros = new Barbeiros("Mathias e Jhon" , "-------------" , (1500d) , endereco );
+        barbeiros.calculaBonificacao();
+        barbeiros.calculaBonificacao(3d);
+        System.out.println(barbeiros);
+
+        System.out.println("------------------------------------------------------------------------------------------");
     }
 }
